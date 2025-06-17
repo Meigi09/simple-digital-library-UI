@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Books - Digital Library UI</title>
     <link rel="stylesheet" href="style.css">
+    <title>Books - Digital Library UI</title>    
 </head>
 <body>
 <div class="container">
     <div class="header">
         <div class="logo">
-            <img src="../images/logo.svg" alt="" width="10%" height="10%">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#f9faf8" stroke-width="2" stroke-linecap="round"/>
+                <path d="M6.5 2H20V22H6.5A2.5 2.5 0 0 1 4 19.5V4.5A2.5 2.5 0 0 1 6.5 2Z" stroke="#f9faf8" stroke-width="2" stroke-linecap="round"/>
+                <path d="M8 7H16" stroke="#f9faf8" stroke-width="2" stroke-linecap="round"/>
+                <path d="M8 11H16" stroke="#f9faf8" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            Digital Library
         </div>
         <div class="menu">
             <a href="index.html">Home</a>
@@ -22,39 +28,138 @@
 
     <div class="books-section">
         <h2>Available Books</h2>
+        
+        <div class="search-filter">
+            <div class="search-box">
+                <input type="text" placeholder="Search books by title, author, or genre...">
+            </div>
+            <select class="filter-select">
+                <option value="">All Genres</option>
+                <option value="fiction">Fiction</option>
+                <option value="classic">Classic</option>
+                <option value="science">Science Fiction</option>
+                <option value="mystery">Mystery</option>
+                <option value="romance">Romance</option>
+            </select>
+        </div>
+
         <div class="book-grid">
             <div class="book-card">
                 <div class="book-image">
-                    <img src="../images/book1.jpg" alt="Book 1">
+                    <svg width="100%" height="280" viewBox="0 0 320 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="320" height="280" fill="#f1f5f9"/>
+                        <rect x="60" y="40" width="200" height="200" rx="10" fill="#3882f6" opacity="0.8"/>
+                        <rect x="80" y="60" width="160" height="20" fill="white" opacity="0.9"/>
+                        <rect x="80" y="90" width="140" height="12" fill="white" opacity="0.7"/>
+                        <rect x="80" y="110" width="120" height="12" fill="white" opacity="0.7"/>
+                        <rect x="80" y="180" width="100" height="40" rx="5" fill="white" opacity="0.3"/>
+                    </svg>
                 </div>
                 <div class="book-info">
                     <h3>The Great Gatsby</h3>
                     <p>Author: F. Scott Fitzgerald</p>
                     <p>Genre: Classic Fiction</p>
+                    <p>Published: 1925</p>
                     <button class="borrow-btn">Borrow Now</button>
                 </div>
             </div>
 
             <div class="book-card">
                 <div class="book-image">
-                    <img src="../images/book2.jpg" alt="Book 2">
+                    <svg width="100%" height="280" viewBox="0 0 320 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="320" height="280" fill="#f1f5f9"/>
+                        <rect x="60" y="40" width="200" height="200" rx="10" fill="#10b981" opacity="0.8"/>
+                        <rect x="80" y="60" width="160" height="20" fill="white" opacity="0.9"/>
+                        <rect x="80" y="90" width="140" height="12" fill="white" opacity="0.7"/>
+                        <rect x="80" y="110" width="120" height="12" fill="white" opacity="0.7"/>
+                        <rect x="80" y="180" width="100" height="40" rx="5" fill="white" opacity="0.3"/>
+                    </svg>
                 </div>
                 <div class="book-info">
                     <h3>To Kill a Mockingbird</h3>
                     <p>Author: Harper Lee</p>
                     <p>Genre: Literary Fiction</p>
+                    <p>Published: 1960</p>
                     <button class="borrow-btn">Borrow Now</button>
                 </div>
             </div>
 
             <div class="book-card">
                 <div class="book-image">
-                    <img src="../images/book3.jpg" alt="Book 3">
+                    <svg width="100%" height="280" viewBox="0 0 320 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="320" height="280" fill="#f1f5f9"/>
+                        <rect x="60" y="40" width="200" height="200" rx="10" fill="#ef4444" opacity="0.8"/>
+                        <rect x="80" y="60" width="160" height="20" fill="white" opacity="0.9"/>
+                        <rect x="80" y="90" width="140" height="12" fill="white" opacity="0.7"/>
+                        <rect x="80" y="110" width="120" height="12" fill="white" opacity="0.7"/>
+                        <rect x="80" y="180" width="100" height="40" rx="5" fill="white" opacity="0.3"/>
+                    </svg>
                 </div>
                 <div class="book-info">
                     <h3>1984</h3>
                     <p>Author: George Orwell</p>
                     <p>Genre: Science Fiction</p>
+                    <p>Published: 1949</p>
+                    <button class="borrow-btn">Borrow Now</button>
+                </div>
+            </div>
+
+            <div class="book-card">
+                <div class="book-image">
+                    <svg width="100%" height="280" viewBox="0 0 320 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="320" height="280" fill="#f1f5f9"/>
+                        <rect x="60" y="40" width="200" height="200" rx="10" fill="#8b5cf6" opacity="0.8"/>
+                        <rect x="80" y="60" width="160" height="20" fill="white" opacity="0.9"/>
+                        <rect x="80" y="90" width="140" height="12" fill="white" opacity="0.7"/>
+                        <rect x="80" y="110" width="120" height="12" fill="white" opacity="0.7"/>
+                        <rect x="80" y="180" width="100" height="40" rx="5" fill="white" opacity="0.3"/>
+                    </svg>
+                </div>
+                <div class="book-info">
+                    <h3>Pride and Prejudice</h3>
+                    <p>Author: Jane Austen</p>
+                    <p>Genre: Romance Classic</p>
+                    <p>Published: 1813</p>
+                    <button class="borrow-btn">Borrow Now</button>
+                </div>
+            </div>
+
+            <div class="book-card">
+                <div class="book-image">
+                    <svg width="100%" height="280" viewBox="0 0 320 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="320" height="280" fill="#f1f5f9"/>
+                        <rect x="60" y="40" width="200" height="200" rx="10" fill="#f59e0b" opacity="0.8"/>
+                        <rect x="80" y="60" width="160" height="20" fill="white" opacity="0.9"/>
+                        <rect x="80" y="90" width="140" height="12" fill="white" opacity="0.7"/>
+                        <rect x="80" y="110" width="120" height="12" fill="white" opacity="0.7"/>
+                        <rect x="80" y="180" width="100" height="40" rx="5" fill="white" opacity="0.3"/>
+                    </svg>
+                </div>
+                <div class="book-info">
+                    <h3>The Catcher in the Rye</h3>
+                    <p>Author: J.D. Salinger</p>
+                    <p>Genre: Literary Fiction</p>
+                    <p>Published: 1951</p>
+                    <button class="borrow-btn">Borrow Now</button>
+                </div>
+            </div>
+
+            <div class="book-card">
+                <div class="book-image">
+                    <svg width="100%" height="280" viewBox="0 0 320 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="320" height="280" fill="#f1f5f9"/>
+                        <rect x="60" y="40" width="200" height="200" rx="10" fill="#06b6d4" opacity="0.8"/>
+                        <rect x="80" y="60" width="160" height="20" fill="white" opacity="0.9"/>
+                        <rect x="80" y="90" width="140" height="12" fill="white" opacity="0.7"/>
+                        <rect x="80" y="110" width="120" height="12" fill="white" opacity="0.7"/>
+                        <rect x="80" y="180" width="100" height="40" rx="5" fill="white" opacity="0.3"/>
+                    </svg>
+                </div>
+                <div class="book-info">
+                    <h3>Brave New World</h3>
+                    <p>Author: Aldous Huxley</p>
+                    <p>Genre: Science Fiction</p>
+                    <p>Published: 1932</p>
                     <button class="borrow-btn">Borrow Now</button>
                 </div>
             </div>
@@ -67,5 +172,61 @@
         </footer>
     </div>
 </div>
+
+<script>
+    // Add interactive functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchInput = document.querySelector('.search-box input');
+        const filterSelect = document.querySelector('.filter-select');
+        const bookCards = document.querySelectorAll('.book-card');
+        const borrowBtns = document.querySelectorAll('.borrow-btn');
+
+        // Search functionality
+        searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            bookCards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const author = card.querySelector('p').textContent.toLowerCase();
+                const genre = card.querySelectorAll('p')[1].textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || author.includes(searchTerm) || genre.includes(searchTerm)) {
+                    card.style.display = 'block';
+                    card.style.animation = 'fadeInUp 0.5s ease-out';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        // Filter functionality
+        filterSelect.addEventListener('change', function() {
+            const filterValue = this.value.toLowerCase();
+            bookCards.forEach(card => {
+                const genre = card.querySelectorAll('p')[1].textContent.toLowerCase();
+                
+                if (filterValue === '' || genre.includes(filterValue)) {
+                    card.style.display = 'block';
+                    card.style.animation = 'fadeInUp 0.5s ease-out';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        // Borrow button functionality
+        borrowBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const bookTitle = this.closest('.book-card').querySelector('h3').textContent;
+                this.textContent = 'Borrowed!';
+                this.style.background = 'linear-gradient(135deg, #10b981 0%, #34d399 100%)';
+                
+                setTimeout(() => {
+                    this.textContent = 'Borrow Now';
+                    this.style.background = 'linear-gradient(135deg, var(--button-action-color) 0%, #60a5fa 100%)';
+                }, 2000);
+            });
+        });
+    });
+</script>
 </body>
 </html>
